@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Türkçe Discord OAuth2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <div align="center">
+      <br>
+      <br>
+      <br>
+      <% if(user.data){ %>
+      <img 
+           style="border-radius:99px;"
+           src="<%= user.data.avatar %>">
+      <h1>
+        <%= user.data.tag %>
+      </h1>
+      <% } %>
+        <a href="<%= user && user.data && user.guilds ? '/cikis' : '/giris' %>">
+          <%= user && user.data && user.guilds ? "Çıkış Yap!" : "Giriş Yap!" %>
+    </a>
+    </div>
+    <style>
+      body{
+        background:#4F545C;
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+      }
+      a{
+        padding:5px 8px;
+        background:#748cdc;
+        color:white;
+        text-decoration:none;
+        font-size:20px;
+        border-radius:8px;
+      }
+    </style>
+  </body>
+</html>
