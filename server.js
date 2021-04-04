@@ -7,7 +7,7 @@ const port = 8080;
 app.set('view engine', 'ejs');
 
 const listener = app.listen(port, async function () {
-    console.log(`Listening on port  ${listener.address().port}`);
+    console.log(`Site Açıldı`);
 });
 
 
@@ -112,8 +112,6 @@ const authorizeUserGrant = code => new Promise(resolve => {
 });
 
 const formURL = type => `${DISCORD_API[type]}?client_id=${CLIENT_ID}&redirect_uri=${encodeURI(REDIRECT_URI)}&response_type=code&scope=identify`;
-
-
 
 
 
