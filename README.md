@@ -1,1 +1,1 @@
-# BİLGİ : 100% BANA AIT DEGILDIR ARAŞTIRARAK YAPTIM
+Yabancı bir repo türkçeleştirilip yayınlanmıştır
